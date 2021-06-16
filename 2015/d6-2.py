@@ -23,21 +23,24 @@ def ex(op, g: set):
             val = 0
             if elem in g:
                 val = g[elem]
-            g[elem] = f + val
+            val += f
+            if val < 0:
+                val = 0
+            g[elem] = val
 
 g = {}
-op = parse_line('turn on 0,0 through 9,9')
-op1 = parse_line('toggle 1,1 through 8,8')
-ex(op, g)
-ex(op1, g)
-#print(g)
-print(sum(g.values()))
-
-# f = open('d6i.txt')
-# text = f.read()
-# lines = text.splitlines()
-
-# ops = [parse_line(line) for line in lines]
-# for op in ops:
-#     ex(op, g)
+# op = parse_line('turn on 0,0 through 9,9')
+# op1 = parse_line('toggle 1,1 through 8,8')
+# ex(op, g)
+# ex(op1, g)
+# #print(g)
 # print(sum(g.values()))
+
+f = open('d6i.txt')
+text = f.read()
+lines = text.splitlines()
+
+ops = [parse_line(line) for line in lines]
+for op in ops:
+    ex(op, g)
+print(sum(g.values()))
