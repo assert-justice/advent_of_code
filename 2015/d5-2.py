@@ -1,4 +1,4 @@
-f = open('d5i.txt')
+f = open('2015/d5i.txt')
 text = f.read()
 
 lines = text.splitlines()
@@ -11,13 +11,13 @@ def r1(s):
     return False
 
 def r2(s):
-    for i in range(len(s) - 3):
-        print(s[i] + s[i+1] + s[i+2])
+    for i in range(len(s) - 2):
+        #print(s[i] + s[i+1] + s[i+2])
         if s[i] == s[i + 2]:
             return True
     return False
 
-#print(r2('aaab'))
+print(r2('baaa'))
 
 nice = 0
 for line in lines:

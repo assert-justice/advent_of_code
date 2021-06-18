@@ -1,25 +1,17 @@
-def disp(jugs, goal):
-    fills = set()
-    def fill(amount, remaining, tup):
-        if amount == goal:
-            l = list(tup)
-            l.sort()
-            fills.add(tuple(l))
-            print(l)
-            return
-        elif amount > goal:
-            return
-        for jug in remaining:
-            rem = set(remaining)
-            rem.remove(jug)
-            fill(amount + jug[0], rem, tup + (jug,))
-    fill(0, jugs, tuple())
-    print(len(fills))
-    # for f in fills:
-    #     print(f)
+def count(goal, amount, jugs):
+    #print(amount, jugs)
+    if amount == goal:
+        return 1
+    elif amount > goal:
+        return 0
+    elif len(jugs) == 0:
+        return 0
+    jugs = set(jugs)
+    jug = jugs.pop()
+    return count(goal, amount + jug[0], jugs) + count(goal, amount, jugs)
 
-f = open('d17i.txt')
+f = open('2015/d17i.txt')
 text = f.read()
 lines = text.splitlines()
 jugs = {(int(line), i,) for i, line in enumerate(lines)}
-disp(jugs, 150)
+print(count(150, 0, jugs))

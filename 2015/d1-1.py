@@ -1,4 +1,4 @@
-f = open('i1.txt')
+f = open('2015/d1i.txt')
 text = f.read()
 floor = 0
 for c in text:
