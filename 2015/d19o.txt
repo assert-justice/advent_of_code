@@ -1,0 +1,99 @@
+_Rn [['Rn']]
+_Ar [['Ar']]
+_Y [['Y']]
+_C [['C']]
+Al [['Th', 'F'], ['Th', '#_RnF_Ar']]
+B [['B', 'Ca'], ['Ti', 'B'], ['Ti', '#_RnF_Ar']]
+Ca [['Ca', 'Ca'], ['P', 'B'], ['P', '#_RnF_Ar'], ['Si', '#_RnF_YF_Ar'], ['Si', '#_RnMg_Ar'], ['Si', 'Th']]
+F [['Ca', 'F'], ['P', 'Mg'], ['Si', 'Al']]
+H [['_C', '#_RnAl_Ar'], ['_C', '#_RnF_YF_YF_Ar'], ['_C', '#_RnF_YMg_Ar'], ['_C', '#_RnMg_YF_Ar'], ['H', 'Ca'], ['N', '#_RnF_YF_Ar'], ['N', '#_RnMg_Ar'], ['N', 'Th'], ['O', 'B'], ['O', '#_RnF_Ar']]
+Mg [['B', 'F'], ['Ti', 'Mg']]
+N [['_C', '#_RnF_Ar'], ['H', 'Si']]
+O [['_C', '#_RnF_YF_Ar'], ['_C', '#_RnMg_Ar'], ['H', 'P'], ['N', '#_RnF_Ar'], ['O', 'Ti']]
+P [['Ca', 'P'], ['P', 'Ti'], ['Si', '#_RnF_Ar']]
+Si [['Ca', 'Si']]
+Th [['Th', 'Ca']]
+Ti [['B', 'P'], ['Ti', 'Ti']]
+e [['H', 'F'], ['N', 'Al'], ['O', 'Mg']]
+#F_Ar [['F', '_Ar']]
+#_RnF_Ar [['_Rn', '#F_Ar']]
+#_YF_Ar [['_Y', '#F_Ar']]
+#F_YF_Ar [['F', '#_YF_Ar']]
+#_RnF_YF_Ar [['_Rn', '#F_YF_Ar']]
+#Mg_Ar [['Mg', '_Ar']]
+#_RnMg_Ar [['_Rn', '#Mg_Ar']]
+#Al_Ar [['Al', '_Ar']]
+#_RnAl_Ar [['_Rn', '#Al_Ar']]
+#_YF_YF_Ar [['_Y', '#F_YF_Ar']]
+#F_YF_YF_Ar [['F', '#_YF_YF_Ar']]
+#_RnF_YF_YF_Ar [['_Rn', '#F_YF_YF_Ar']]
+#_YMg_Ar [['_Y', '#Mg_Ar']]
+#F_YMg_Ar [['F', '#_YMg_Ar']]
+#_RnF_YMg_Ar [['_Rn', '#F_YMg_Ar']]
+#Mg_YF_Ar [['Mg', '#_YF_Ar']]
+#_RnMg_YF_Ar [['_Rn', '#Mg_YF_Ar']]
+
+('Rn',) _Rn
+('Ar',) _Ar
+('Y',) _Y
+('C',) _C
+('Th', 'F') Al
+('Th', '#_RnF_Ar') Al
+('B', 'Ca') B
+('Ti', 'B') B
+('Ti', '#_RnF_Ar') B
+('Ca', 'Ca') Ca
+('P', 'B') Ca
+('P', '#_RnF_Ar') Ca
+('Si', '#_RnF_YF_Ar') Ca
+('Si', '#_RnMg_Ar') Ca
+('Si', 'Th') Ca
+('Ca', 'F') F
+('P', 'Mg') F
+('Si', 'Al') F
+('_C', '#_RnAl_Ar') H
+('_C', '#_RnF_YF_YF_Ar') H
+('_C', '#_RnF_YMg_Ar') H
+('_C', '#_RnMg_YF_Ar') H
+('H', 'Ca') H
+('N', '#_RnF_YF_Ar') H
+('N', '#_RnMg_Ar') H
+('N', 'Th') H
+('O', 'B') H
+('O', '#_RnF_Ar') H
+('B', 'F') Mg
+('Ti', 'Mg') Mg
+('_C', '#_RnF_Ar') N
+('H', 'Si') N
+('_C', '#_RnF_YF_Ar') O
+('_C', '#_RnMg_Ar') O
+('H', 'P') O
+('N', '#_RnF_Ar') O
+('O', 'Ti') O
+('Ca', 'P') P
+('P', 'Ti') P
+('Si', '#_RnF_Ar') P
+('Ca', 'Si') Si
+('Th', 'Ca') Th
+('B', 'P') Ti
+('Ti', 'Ti') Ti
+('H', 'F') e
+('N', 'Al') e
+('O', 'Mg') e
+('F', '_Ar') #F_Ar
+('_Rn', '#F_Ar') #_RnF_Ar
+('_Y', '#F_Ar') #_YF_Ar
+('F', '#_YF_Ar') #F_YF_Ar
+('_Rn', '#F_YF_Ar') #_RnF_YF_Ar
+('Mg', '_Ar') #Mg_Ar
+('_Rn', '#Mg_Ar') #_RnMg_Ar
+('Al', '_Ar') #Al_Ar
+('_Rn', '#Al_Ar') #_RnAl_Ar
+('_Y', '#F_YF_Ar') #_YF_YF_Ar
+('F', '#_YF_YF_Ar') #F_YF_YF_Ar
+('_Rn', '#F_YF_YF_Ar') #_RnF_YF_YF_Ar
+('_Y', '#Mg_Ar') #_YMg_Ar
+('F', '#_YMg_Ar') #F_YMg_Ar
+('_Rn', '#F_YMg_Ar') #_RnF_YMg_Ar
+('Mg', '#_YF_Ar') #Mg_YF_Ar
+('_Rn', '#Mg_YF_Ar') #_RnMg_YF_Ar
