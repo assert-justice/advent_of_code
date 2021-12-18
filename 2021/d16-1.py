@@ -12,6 +12,11 @@ def parse(src):
     vs = 0
     def group():
         nonlocal cur
+        #t = 0
+        # while eat(1) == 1:
+        #     t += eat(4)
+        # t += eat(4)
+        # return t
         bs = []
         while True:
             s = src[cur:cur+5]
